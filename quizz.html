@@ -15,12 +15,19 @@
     <form>
         <label for="name">Complete Name:</label><br>
         <input type="text" id="name" name="name"><br>
+        <p></p>
+
         <label for="email">E-mail:</label><br>
         <input type="text" id="email" name="email"><br>
+        <p></p>
+
         <label for="number">Employer Number:</label><br>
         <input type="text" id="number" name="number"><br>
+        <p></p>
+
         <label for="phone">Celphone Number:</label><br>
         <input type="text" id="phone" name="phone"><br>
+        <p></p>
     </form>
     </div>
 
@@ -28,7 +35,7 @@
     <div class="question1">
     <div class="question"><H1><strong>Question 1</strong></H1></div>
     <tr>
-        <td><button class="buttons">Resposta 1</button></td>
+        <td><button class="buttons" id="correct">Resposta 1</button></td>
         <td><button class="buttons">Resposta 2</button></td>
         <td><button class="buttons">Resposta 3</button></td>
         <td><button class="buttons">Resposta 4</button></td>
@@ -40,7 +47,7 @@
     <div class="question"><H1><strong>Question 2</strong></H1></div>
     <tr>
         <td><button class="buttons">Resposta 1</button></td>
-        <td><button class="buttons">Resposta 2</button></td>
+        <td><button class="buttons" id="correct">Resposta 2</button></td>
         <td><button class="buttons">Resposta 3</button></td>
         <td><button class="buttons">Resposta 4</button></td>
     </tr>
@@ -51,9 +58,9 @@
     <div class="question"><H1><strong>Question 3</strong></H1></div>
     <tr>
         <input type="radio" name="qstn3">Resposta 1<br>
-        <input type="radio" name="qstn3">Resposta 1<br>
-        <input type="radio" name="qstn3">Resposta 1<br>
-        <input type="radio" name="qstn3">Resposta 1<br>
+        <input type="radio" name="qstn3">Resposta 2<br>
+        <input type="radio" name="qstn3" id="correct">Resposta 3<br>
+        <input type="radio" name="qstn3">Resposta 4<br>
     </tr>
     </div>
 
@@ -62,15 +69,15 @@
     <div class="question"><H1><strong>Question 4</strong></H1></div>
     <tr>
         <input type="checkbox" name="question3">Resposta 1<br>
-        <input type="checkbox" name="question3">Resposta 1<br>
-        <input type="checkbox" name="question3">Resposta 1<br>
-        <input type="checkbox" name="question3">Resposta 1<br>
+        <input type="checkbox" name="question3">Resposta 2<br>
+        <input type="checkbox" name="question3" id="correct">Resposta 3<br>
+        <input type="checkbox" name="question3" id="correct">Resposta 4<br>
     </tr>
     </div>
-    
+    <br>
 
     <div class="SubmitButton">
-    <input type="submit" value="Submit">
+    <input type="submit" name="submit" value="Submit">
     </div>
 
 
