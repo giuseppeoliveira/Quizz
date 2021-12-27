@@ -10,7 +10,7 @@
     <title>Quizz Teste</title>
 </head>
 <body>
-    <div class="startQuestions">
+    <div class="container">
     <div class="question"><H1><strong>Question 1</strong></H1></div>
     <form>
         <label for="name">Complete Name:</label><br>
@@ -29,32 +29,38 @@
         <input type="text" id="phone" name="phone"><br>
         <p></p>
     </form>
+    <button class="next" onclick="next(1)" >NEXT</button>
     </div>
 
+    <p></p>
 
-    <div class="question1">
+    <div class="container">
     <div class="question"><H1><strong>Question 1</strong></H1></div>
     <tr>
-        <td><button class="buttons" id="correct1">Resposta 1</button></td>
-        <td><button class="buttons">Resposta 2</button></td>
-        <td><button class="buttons">Resposta 3</button></td>
-        <td><button class="buttons">Resposta 4</button></td>
+        <td><button class="buttonsC" id="correct1">Resposta 1</button></td>
+        <td><button class="buttonsE">Resposta 2</button></td>
+        <td><button class="buttonsE">Resposta 3</button></td>
+        <td><button class="buttonsE">Resposta 4</button></td>
     </tr>
+    <button class="next" onclick="next(2)" >NEXT</button>
     </div>
 
+    <p></p>
 
-    <div class="question2">
+    <div class="container">
     <div class="question"><H1><strong>Question 2</strong></H1></div>
     <tr>
-        <td><button class="buttons">Resposta 1</button></td>
-        <td><button class="buttons" id="correct2">Resposta 2</button></td>
-        <td><button class="buttons">Resposta 3</button></td>
-        <td><button class="buttons">Resposta 4</button></td>
+        <td><button class="buttonsE">Resposta 1</button></td>
+        <td><button class="buttonsC" id="correct2">Resposta 2</button></td>
+        <td><button class="buttonsE">Resposta 3</button></td>
+        <td><button class="buttonsE">Resposta 4</button></td>
     </tr>
+    <button class="next" onclick="next(3)" >NEXT</button>
     </div>
 
+    <p></p>
 
-    <div class="question3">
+    <div class="container">
     <div class="question"><H1><strong>Question 3</strong></H1></div>
     <tr>
         <input type="radio" name="qstn3">Resposta 1<br>
@@ -62,10 +68,12 @@
         <input type="radio" name="qstn3" id="correct3">Resposta 3<br>
         <input type="radio" name="qstn3">Resposta 4<br>
     </tr>
+    <button class="next" onclick="next(4)" >NEXT</button>
     </div>
 
+    <p></p>
 
-    <div class="question4">
+    <div class="container">
     <div class="question"><H1><strong>Question 4</strong></H1></div>
     <tr>
         <input type="checkbox" name="question3">Resposta 1<br>
@@ -73,10 +81,12 @@
         <input type="checkbox" name="question3" id="correct4">Resposta 3<br>
         <input type="checkbox" name="question3" id="correct5">Resposta 4<br>
     </tr>
+    <button class="next" onclick="next(5)" >NEXT</button>
     </div>
-    <br>
 
-    <div class="SubmitButton">
+    <p></p>
+
+    <div class="confirmation">
     <input type="submit" name="submit" value="Submit" onclick="result()">
     </div>
 
