@@ -23,16 +23,14 @@ function nextA(id) {
 
 //Next 1questions.
 function nextB(id) {
-    if(document.getElementById("correct1").checked) {
-        document.getElementsByClassName("container")[id-1].style.display = "none"
-        document.getElementsByClassName("container")[id].style.display = "block";
-    }
-    else if(document.getElementById("wrong1").checked) {
+    var q1 = document.getElementsByClassName("q1") 
+    if(q1[0].checked||q1[1].checked||q1[2].checked)
+    {
         document.getElementsByClassName("container")[id-1].style.display = "none"
         document.getElementsByClassName("container")[id].style.display = "block";
     }
     else {
-        alert('Please mark one option!');
+        document.getElementById("qst1").classList.remove("hidden");
 }
 }
 
