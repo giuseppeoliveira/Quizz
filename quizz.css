@@ -84,3 +84,26 @@ h3 {
   height: 10px;
   transition: all 150ms ease-in-out;
 }
+
+
+.button2 {
+  font-family: 'Barclaycard Co Lt',Tahoma,sans-serif;
+  margin: 10px 0 0 0;
+  cursor: pointer;
+  font-size: 1em;
+  border: none;
+  padding: 10px 15px;
+  line-height: 18px;
+  border-radius: 3px;
+  vertical-align: baseline;
+  background: #075da8;
+  color: white;
+  text-decoration: none !important;
+  display: inline-block;
+  transition: background-color 200ms ease-in-out;
+}
+
+.button2:hover {
+  background-color: #059fdb !important;
+  color: white;
+}

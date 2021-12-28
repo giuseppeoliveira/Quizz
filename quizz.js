@@ -11,7 +11,7 @@ function nextB(id) {
 
 
 // Total score function.
-function result () {
+function result() {
     var score=0;
     if (document.getElementById('correct1').checked)
     {
@@ -33,8 +33,6 @@ function result () {
     {
         score++;
     }
-   document.write("Your score is: "+score);
+   alert("Your score is: "+score );
 }
 
-
-// Total score function.
