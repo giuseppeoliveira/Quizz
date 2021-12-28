@@ -106,3 +106,13 @@ h3 {
   background-color: #059fdb !important;
   color: white;
 }
+
+
+.hidden {
+  display: none;
+}
+
+p {
+  color: #ff0000;
+}
+

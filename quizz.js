@@ -1,18 +1,21 @@
+//Validate input.
+function validate(id, length){
+    if(document.getElementById(id).value.length < length) {        
+        document.getElementById("alert-"+id).classList.remove("hidden");
+        return false; 
+     }
+     else{
+         document.getElementById("alert-"+id).classList.add("hidden");
+         return true; 
+     }
+}
+
 //Start questions.
 function nextA(id) {
-    if(document.getElementById("name").value.length < 10) {
-        alert('Please fill your name!');
-    }
-    else if (document.getElementById("email").value.length < 13){
-        alert('Please fill your email!');
-    }
-    else if (document.getElementById("number").value.length < 5){
-        alert('Please fill yout employe number!');
-    }    
-    else if (document.getElementById("phone").value.length < 8){
-        alert('Please fill yout number with country code');
-    }
-    else {
+    if (validate("name",10)
+    &validate("email",13)
+    &validate("number",5)
+    &validate("phone",8)){
     document.getElementsByClassName("introContainer")[id-1].style.display = "none"
     document.getElementsByClassName("container")[id].style.display = "block";
 }

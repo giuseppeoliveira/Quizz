@@ -18,24 +18,29 @@
             <h2>Security Survey</h2>
     
             <div id="progress_bar" class="progress_bar1"></div>
-                <form class="questions_box">
 
+
+                <form class="questions_box">
                     <div class="introContainer" >
                         <div class="question"><H2><strong> Personal Dados</strong></H1></div>
                             <label for="name">Complete Name:</label><br>
                             <input type="text" id="name" name="name"><br>
+                            <p id="alert-name" class="hidden"> fill your name </p>
                             <p></p>
                     
                             <label for="email">E-mail:</label><br>
                             <input type="text" id="email" name="email"><br>
+                            <p id="alert-email" class="hidden"> fill your email </p>
                             <p></p>
                     
                             <label for="number">Employer Number:</label><br>
                             <input type="text" id="number" name="number"><br>
+                            <p id="alert-number" class="hidden"> fill your employ  </p>
                             <p></p>
                     
                             <label for="phone">Celphone Number:</label><br>
                             <input type="text" id="phone" name="phone"><br>
+                            <p id="alert-phone" class="hidden"> fill your cellphone </p>
                             <p></p>
                         <div id="submit1" class="button" onclick="nextA(1)">Enviar Resposta</div>
                         <div class="clearfix"></div>
@@ -49,6 +54,11 @@
                         <input id ="wrong1" type="radio" name="q1"> Nunca!<br>
                         <div id="submit1" class="button" onclick="nextB(2)">Enviar Resposta</div>
                         <div class="clearfix"></div>
+                        <p></p>
+
+
+
+
                     </div>
     
                    <div id="question-2" class="container">
