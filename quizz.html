@@ -7,89 +7,100 @@
     <link href="quizz.css" rel="stylesheet">
     <script src="quizz.js"></script>
     
-    <title>Quizz Teste</title>
+    <title>Security Survey</title>
+    <meta name="description" content="Survey">
+    <meta name="author" content="Luke Lehane">
+
 </head>
 <body>
-    <div class="introContainer" id="introContainer1">
-    <div class="question"><H1><strong> Personal Dados</strong></H1></div>
-    <form>
-        <label for="name">Complete Name:</label><br>
-        <input type="text" id="name" name="name"><br>
-        <p></p>
+    <div class="container">	
+        <div class="row">
+            <div class="two-thirds column">
+            <h2>Security Survey</h2>
+    
+            <div id="progress_bar" class="progress_bar1"></div>
+                <form class="questions_box">
 
-        <label for="email">E-mail:</label><br>
-        <input type="text" id="email" name="email"><br>
-        <p></p>
+                    <div class="introContainer" >
+                        <div class="question"><H2><strong> Personal Dados</strong></H1></div>
+                            <label for="name">Complete Name:</label><br>
+                            <input type="text" id="name" name="name"><br>
+                            <p></p>
+                    
+                            <label for="email">E-mail:</label><br>
+                            <input type="text" id="email" name="email"><br>
+                            <p></p>
+                    
+                            <label for="number">Employer Number:</label><br>
+                            <input type="text" id="number" name="number"><br>
+                            <p></p>
+                    
+                            <label for="phone">Celphone Number:</label><br>
+                            <input type="text" id="phone" name="phone"><br>
+                            <p></p>
+                        <div id="submit1" class="button" onclick="nextA(1)">Enviar Resposta</div>
+                        <div class="clearfix"></div>
+                    </div>
 
-        <label for="number">Employer Number:</label><br>
-        <input type="text" id="number" name="number"><br>
-        <p></p>
-
-        <label for="phone">Celphone Number:</label><br>
-        <input type="text" id="phone" name="phone"><br>
-        <p></p>
-    </form>
-    <button class="start" onclick="start1()""> START </button>
+                <div id="question-1" class="container">
+                      <h2>Questão 1</h2>
+                        <h3>Você se preocupa em se tornar uma vítima de fraude?</h3>
+                        <input id="question-1-answer-a" type="radio" name="favelang" value=1> O que é Fraude?<br>
+                        <input id="question-1-answer-b" type="radio" name="favelang" value=2> Nunca me preocupo<br>
+                        <input id="question-1-answer-c" type="radio" name="favelang" value=3> Sim, eu me preocupo muito com isso!<br>
+                        <div id="submit1" class="button" onclick="nextB(2)">Enviar Resposta</div>
+                <div class="clearfix"></div>
+                    </div>
+    
+                   <div id="question-2" class="container">
+                       <h2>Questão 2</h2>
+                       <h3>Você utiliza a mesma senha para tudo?</h3>
+                     <input id="question-2-answer-a" type="radio" name="favelang" value="1"> Sim!<br>
+                       <input id="question-2-answer-b" type="radio" name="favelang" value="2"> Só para as senhas de cartão de crédito<br>
+                       <input id="question-2-answer-c" type="radio" name="favelang" value="3"> Não, todas são diferentes!<br>
+                       <div id="submit2" class="button" onclick="nextB(3)">Enviar Resposta</div>
+               <div class="clearfix"></div>
+                   </div>
+                  
+                   <div id="question-3" class="container">	
+                       <h2>Questão 3</h2>
+                       <h3>Você confia em um e-mail enviado pelas suas costas pedindo sua senha?</h3>
+                     <input id="question-3-answer-a" type="radio" name="favelang" value="1"> Sim, é o banco afinal<br>
+                       <input id="question-3-answer-b" type="radio" name="favelang" value="2"> Se parece oficial, sim<br>
+                       <input id="question-3-answer-c" type="radio" name="favelang" value="3"> De jeito nenhum, um banco nunca pedirá a senha de sua conta<br>
+                       <div id="submit3" class="button" onclick="nextB(4)">Enviar Resposta</div>
+               <div class="clearfix"></div>
+                   </div>
+    
+             <div id="question-4" class="container">
+                <h2>Questão 4</h2>
+                <h3>Você costuma usar cartão de crédito virtual em compras online?</h3>
+                <input id="question-1-answer-a" type="radio" name="favelang" value="1"> Não <br>
+                <input id="question-1-answer-b" type="radio" name="favelang" value="2"> Raramente uso<br>
+                <input id="question-1-answer-c" type="radio" name="favelang" value="3"> Sim, com certeza!<br>
+                <div id="submit4" class="button" onclick="nextB(5)">Enviar Resposta</div>
+                <div class="clearfix"></div>
+              </div>
+    
+              <div id="question-5" class="container">
+                <h2>Questão 5</h2>
+                <h3>Você compartilha seu PIN com alguém?</h3>
+                <input id ="correct1" type="radio" name="q5"> Sim, qualquer um que pedir por isso<br>
+                <input id ="wrong1" type="radio" name="q5"> Na verdade não, mas às vezes eu deixo meu(minha) parceiro(a) sacar dinheiro para mim<br>
+                <input id ="wrong1" type="radio" name="q5"> Nunca!<br>
+                <div id="submit5" class="button" onclick="result">Enviar Resposta</div>
+                <div class="clearfix"></div>
+              </div>
+    
+             <div id="question-6" class="container"> 
+               <h2>Obrigado por responder a pesquisa!</h2>
+               <h3>Your final score is: </h3>
+               <h1 id=printtotalscore></h1>
+               <p id=printscoreinfo>Nice try feela.</p>
+            </div>
+           </form>
+         </div>
+        </div>
     </div>
-
-    <p></p>
-
-    <div class="container" id="container">
-    <div class="question"><H1><strong>Question 1</strong></H1></div>
-    <tr>
-        <td><button class="buttonsC" id="correct1">Resposta 1</button></td>
-        <td><button class="buttonsE">Resposta 2</button></td>
-        <td><button class="buttonsE">Resposta 3</button></td>
-        <td><button class="buttonsE">Resposta 4</button></td>
-    </tr>
-    <button class="next" onclick="next(1)" >NEXT</button>
-    </div>
-
-    <p></p>
-
-    <div class="container">
-    <div class="question"><H1><strong>Question 2</strong></H1></div>
-    <tr>
-        <td><button class="buttonsE">Resposta 1</button></td>
-        <td><button class="buttonsC" id="correct2">Resposta 2</button></td>
-        <td><button class="buttonsE">Resposta 3</button></td>
-        <td><button class="buttonsE">Resposta 4</button></td>
-    </tr>
-    <button class="next" onclick="next(2)" >NEXT</button>
-    </div>
-
-    <p></p>
-
-    <div class="container">
-    <div class="question"><H1><strong>Question 3</strong></H1></div>
-    <tr>
-        <input type="radio" name="qstn3">Resposta 1<br>
-        <input type="radio" name="qstn3">Resposta 2<br>
-        <input type="radio" name="qstn3" id="correct3">Resposta 3<br>
-        <input type="radio" name="qstn3">Resposta 4<br>
-    </tr>
-    <button class="next" onclick="next(3)" >NEXT</button>
-    </div>
-
-    <p></p>
-
-    <div class="container">
-    <div class="question"><H1><strong>Question 4</strong></H1></div>
-    <tr>
-        <input type="checkbox" name="question3">Resposta 1<br>
-        <input type="checkbox" name="question3">Resposta 2<br>
-        <input type="checkbox" name="question3" id="correct4">Resposta 3<br>
-        <input type="checkbox" name="question3" id="correct5">Resposta 4<br>
-    </tr>
-    <button class="next" onclick="next(4)" >NEXT</button>
-    </div>
-
-    <p></p>
-
-    <div class="confirmation">
-    <input type="submit" name="submit" value="Submit" onclick="result()">
-    </div>
-
-
 </body>
 </html>
