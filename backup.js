@@ -1,10 +1,11 @@
-//Start
-function start1() {
-    document.getElementsByClassName("introContainer")[0].style.display = "none"
-    document.getElementsByClassName("container")[0].style.display = "block";
+// Display first block.
+document.getElementsByClassName('container')[0].style.display = "block";
+
+// Next function.
+function next(id) {
+    document.getElementsByClassName('container')[id-1].style.display = "none";
+    document.getElementsByClassName('container')[id].style.display = "none";
 }
-
-
 
 // Total score function.
 function result () {
