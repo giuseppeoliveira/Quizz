@@ -24,7 +24,7 @@ function nextA(id) {
 //Next 1questions.
 function nextB(id) {
     var q1 = document.getElementsByClassName("q1") 
-    if(q1[0].checked||q1[1].checked||q1[2].checked)
+    if(q1[0].checked||q1[1].checked||q1[2].checked||q1[3].checked)
     {
         document.getElementsByClassName("container")[id-1].style.display = "none"
         document.getElementsByClassName("container")[id].style.display = "block";
@@ -37,7 +37,7 @@ function nextB(id) {
 //Next 2questions.
 function nextC(id) {
     var q2 = document.getElementsByClassName("q2")
-    if(q2[0].checked||q2[1].checked||q2[2].checked)
+    if(q2[0].checked||q2[1].checked||q2[2].checked||q2[3].checked)
     {
         document.getElementsByClassName("container")[id-1].style.display = "none"
         document.getElementsByClassName("container")[id].style.display = "block";
@@ -49,8 +49,8 @@ function nextC(id) {
 
 //Next 3questions.
 function nextD(id) {
-    var q2 = document.getElementsByClassName("q3")
-    if(q2[0].checked||q2[1].checked||q2[2].checked)
+    var q3 = document.getElementsByClassName("q3")
+    if(q3[0].checked||q3[1].checked||q3[2].checked||q3[3].checked)
     {
         document.getElementsByClassName("container")[id-1].style.display = "none"
         document.getElementsByClassName("container")[id].style.display = "block";
@@ -63,8 +63,8 @@ function nextD(id) {
 
 //Next 4questions.
 function nextE(id) {
-    var q2 = document.getElementsByClassName("q4")
-    if(q2[0].checked||q2[1].checked||q2[2].checked)
+    var q4 = document.getElementsByClassName("q4")
+    if(q4[0].checked||q4[1].checked||q4[2].checked||q4[3].checked)
     {
         document.getElementsByClassName("container")[id-1].style.display = "none"
         document.getElementsByClassName("container")[id].style.display = "block";
@@ -78,8 +78,8 @@ function nextE(id) {
 
 //Next 5questions.
 function nextF(id) {
-    var q2 = document.getElementsByClassName("q5")
-    if(q2[0].checked||q2[1].checked||q2[2].checked)
+    var q5 = document.getElementsByClassName("q5")
+    if(q5[0].checked||q5[1].checked||q5[2].checked||q5[3].checked)
     {
         document.getElementsByClassName("container")[id-1].style.display = "none"
         document.getElementsByClassName("container")[id].style.display = "block";
@@ -115,6 +115,6 @@ function result() {
     {
         score++;
     }
-    document.getElementById("res").innerHTML = "Your score is: "+score;
+    document.getElementById("res").innerHTML = "You are exceptional for being a part of this experience. You tried and did it. From 5 questions, you answered the total of "+score ;
 }
 

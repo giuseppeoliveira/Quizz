@@ -6,102 +6,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="quizz.css" rel="stylesheet">
     <script src="quizz.js"></script>
-    
-    <title>Security Survey</title>
-
-
 </head>
+
+
 <body>
     <div class="container">	
         <div class="headder">
-            <h2>Security Survey</h2>
-
-                <div id="progress_bar" class="progress_bar1"></div>
+            <h2>Music Survey</h2>
+            <div id="progress_bar" class="progress_bar1"></div>
+        </div>
 
             <form class="questions_box">
               <div class="introContainer">
-                <div class="question"><H2><strong> Personal Dados</strong></H1></div>
+                <div class="question"><H2><strong> Personal Data</strong></H1></div>
 
                 <label for="name">Your Name:</label><br>
                 <input type="text" id="name" placeholder="With last name"><br>
-                <p id="alert-name" class="hidden"> fill your name </p>
+                <p id="alert-name" class="hidden"> Fill with your full name. </p>
 
                     
                 <label for="email">E-mail:</label><br>
                 <input type="text" id="email" placeholder="email@gmail.com"><br>
-                <p id="alert-email" class="hidden"> fill your email </p>
+                <p id="alert-email" class="hidden"> Fill with your email. </p>
 
                     
-                <label for="number">Employer Number:</label><br>
+                <label for="number">ID Number:</label><br>
                 <input type="text" id="number" placeholder="12345"><br>
-                <p id="alert-number" class="hidden"> fill your employ  </p>
+                <p id="alert-number" class="hidden"> Fill with your personal ID.  </p>
 
                     
                 <label for="phone">Cellphone Number:</label><br>
                 <input type="text" id="phone" placeholder="DDD + Number" pattern="[0-9]{3}-[0-9]{5}-[0-9]{4}"><br>
-                <p id="alert-phone" class="hidden"> fill your cellphone </p>
+                <p id="alert-phone" class="hidden"> Fill with your cellphone. </p>
 
-                <div class="button" onclick="nextA(1)">Enviar Resposta</div>
+                <div class="button" onclick="nextA(1)"> Start Survey </div>
              </div>
 
              <div id="question-1" class="container">
-                <h2>Questão 1</h2>
-                <h3>Você se preocupa em se tornar uma vítima de fraude?</h3>
-                <input class ="q1" id ="correct1" type="radio"> Sim, qualquer um que pedir por isso<br>
-                <input class ="q1" type="radio" > Na verdade não, mas às vezes eu deixo meu(minha) parceiro(a) sacar dinheiro para mim<br>
-                <input class ="q1" type="radio" > Nunca!<br>
+                <h2>Question 1</h2>
+                <h3>Which band uses violin in all their songs?</h3>
+                <input class ="q1" id ="correct1" type="radio"> Korpiklaani <br>
+                <input class ="q1" type="radio"> Led Zeppelin <br>
+                <input class ="q1" type="radio"> KoRn <br>
+                <input class ="q1" type="radio"> Finntroll <br>
 
-                <div class="alert alert-danger hidden" id="qst1"> marque uma questão </div>
-                <div class="button" onclick="nextB(2)">Enviar Resposta</div>
+                <div class="alert alert-danger hidden" id="qst1"> Please, select one option. </div>
+                <div class="button" onclick="nextB(2)"> Next Question </div>
              </div>
     
              <div id="question-2" class="container">
-                <h2>Questão 2</h2>
-                <h3>Você utiliza a mesma senha para tudo?</h3>
-                <input class ="q2" id ="correct2" type="radio"> Sim, qualquer um que pedir por isso<br>
-                <input class ="q2" type="radio"> Na verdade não, mas às vezes eu deixo meu(minha) parceiro(a) sacar dinheiro para mim<br>
-                <input class ="q2" type="radio"> Nunca!<br>
+                <h2>Question 2</h2>
+                <h3>Which band uses visual Kei?</h3>
+                <input class ="q2" type="radio"> Saundô <br>
+                <input class ="q2" type="radio"> Flow <br>
+                <input class ="q2" id ="correct2" type="radio"> X-Japan<br>
+                <input class ="q2" type="radio"> Maximum The Hormone <br>
 
-                <div class="alert alert-danger hidden" id="qst2"> marque uma questão </div>
-                <div class="button" onclick="nextC(3)">Enviar Resposta</div>
+                <div class="alert alert-danger hidden" id="qst2"> Please, select one option. </div>
+                <div class="button" onclick="nextC(3)"> Next Question </div>
              </div>
                   
              <div id="question-3" class="container">	
-                <h2>Questão 3</h2>
-                <h3>Você confia em um e-mail enviado pelas suas costas pedindo sua senha?</h3>
-                <input class ="q3" id ="correct3" type="radio"> Sim, qualquer um que pedir por isso<br>
-                <input class ="q3" type="radio"> Na verdade não, mas às vezes eu deixo meu(minha) parceiro(a) sacar dinheiro para mim<br>
-                <input class ="q3" type="radio"> Nunca!<br>
+                <h2>Question 3</h2>
+                <h3>Which band does guitarist Sugizo play?</h3>
+                <input class ="q3" type="radio"> Dir En Grey <br>
+                <input class ="q3" id ="correct3" type="radio"> Luna Sea <br>
+                <input class ="q3" type="radio"> The Gazette <br>
+                <input class ="q3" type="radio"> L'Arc~en~Ciel <br>
 
-                <div class="alert alert-danger hidden" id="qst3"> marque uma questão </div>
-                <div class="button" onclick="nextD(4)">Enviar Resposta</div>
+                <div class="alert alert-danger hidden" id="qst3"> Please, select one option. </div>
+                <div class="button" onclick="nextD(4)">Next Question</div>
              </div>
     
              <div id="question-4" class="container">
-                <h2>Questão 4</h2>
-                <h3>Você costuma usar cartão de crédito virtual em compras online?</h3>
-                <input class ="q4" type="radio"> Sim, qualquer um que pedir por isso<br>
-                <input class ="q4" id ="correct4" type="radio"> Na verdade não, mas às vezes eu deixo meu(minha) parceiro(a) sacar dinheiro para mim<br>
-                <input class ="q4" type="radio"> Nunca!<br>
+                <h2>Question 4</h2>
+                <h3>Wich band belongs the song called Ouka Saki Some ni Keri?</h3>
+                <input class ="q4" type="radio"> A <br>
+                <input class ="q4" id ="correct4" type="radio"> D <br>
+                <input class ="q4" type="radio"> C <br>
+                <input class ="q4" type="radio"> B <br>
 
-                <div class="alert alert-danger hidden" id="qst4"> marque uma questão </div>
-                <div class="button" onclick="nextE(5)">Enviar Resposta</div>
+                <div class="alert alert-danger hidden" id="qst4"> Please, select one option </div>
+                <div class="button" onclick="nextE(5)">Next Question</div>
               </div>
     
               <div id="question-5" class="container">
-                <h2>Questão 5</h2>
-                <h3>Você compartilha seu PIN com alguém?</h3>
-                <input class ="q5" type="radio"> Sim, qualquer um que pedir por isso<br>
-                <input class ="q5" type="radio"> Na verdade não, mas às vezes eu deixo meu(minha) parceiro(a) sacar dinheiro para mim<br>
-                <input class ="q5" id ="correct5" type="radio"> Nunca!<br>
+                <h2>Question 5</h2>
+                <h3>Wich band belongs the song called Spark?</h3>
+                <input class ="q5" type="radio"> The Gazette <br>
+                <input class ="q5" type="radio"> Nightmare <br>
+                <input class ="q5" id ="correct5" type="radio"> Yellow Monkeys <br>
+                <input class ="q5" type="radio"> Scandal <br>
 
-                <div class="alert alert-danger hidden" id="qst5"> marque uma questão </div>
-                <div class="button" onclick="nextF(6);result();">Enviar Resposta</div>
+                <div class="alert alert-danger hidden" id="qst5"> Please, select one option </div>
+                <div class="button" onclick="nextF(6);result();"> Send Answers </div>
               </div>
     
               <div id="question-6" class="container"> 
-                <h2>Obrigado por responder a pesquisa!</h2>
-                <div id="res">Pontuação</div>
+                <h2> Thank you for your colaboration, and time wasted!</h2>
+                <div id="res"></div>
               </div>
           </form>
          </div>
