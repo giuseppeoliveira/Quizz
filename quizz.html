@@ -13,105 +13,98 @@
 </head>
 <body>
     <div class="container">	
-        <div class="row">
-            <div class="two-thirds column">
+        <div class="headder">
             <h2>Security Survey</h2>
+
+                <div id="progress_bar" class="progress_bar1"></div>
+
+            <form class="questions_box">
+              <div class="introContainer">
+                <div class="question"><H2><strong> Personal Dados</strong></H1></div>
+
+                <label for="name">Complete Name:</label><br>
+                <input type="text" id="name" ><br>
+                <p id="alert-name" class="hidden"> fill your name </p>
+
+                    
+                <label for="email">E-mail:</label><br>
+                <input type="text" id="email"><br>
+                <p id="alert-email" class="hidden"> fill your email </p>
+
+                    
+                <label for="number">Employer Number:</label><br>
+                <input type="text" id="number"><br>
+                <p id="alert-number" class="hidden"> fill your employ  </p>
+
+                    
+                <label for="phone">Cellphone Number:</label><br>
+                <input type="text" id="phone"><br>
+                <p id="alert-phone" class="hidden"> fill your cellphone </p>
+
+                <div class="button" onclick="nextA(1)">Enviar Resposta</div>
+             </div>
+
+             <div id="question-1" class="container">
+                <h2>Questão 1</h2>
+                <h3>Você se preocupa em se tornar uma vítima de fraude?</h3>
+                <input class ="q1" id ="correct1" type="radio"> Sim, qualquer um que pedir por isso<br>
+                <input class ="q1" type="radio" > Na verdade não, mas às vezes eu deixo meu(minha) parceiro(a) sacar dinheiro para mim<br>
+                <input class ="q1" type="radio" > Nunca!<br>
+
+                <div class="alert alert-danger hidden" id="qst1"> marque uma questão </div>
+                <div class="button" onclick="nextB(2)">Enviar Resposta</div>
+             </div>
     
-            <div id="progress_bar" class="progress_bar1"></div>
+             <div id="question-2" class="container">
+                <h2>Questão 2</h2>
+                <h3>Você utiliza a mesma senha para tudo?</h3>
+                <input class ="q2" id ="correct2" type="radio"> Sim, qualquer um que pedir por isso<br>
+                <input class ="q2" type="radio"> Na verdade não, mas às vezes eu deixo meu(minha) parceiro(a) sacar dinheiro para mim<br>
+                <input class ="q2" type="radio"> Nunca!<br>
 
-
-                <form class="questions_box">
-                    <div class="introContainer" >
-                        <div class="question"><H2><strong> Personal Dados</strong></H1></div>
-                            <label for="name">Complete Name:</label><br>
-                            <input type="text" id="name" name="name"><br>
-                            <p id="alert-name" class="hidden"> fill your name </p>
-                            <p></p>
-                    
-                            <label for="email">E-mail:</label><br>
-                            <input type="text" id="email" name="email"><br>
-                            <p id="alert-email" class="hidden"> fill your email </p>
-                            <p></p>
-                    
-                            <label for="number">Employer Number:</label><br>
-                            <input type="text" id="number" name="number"><br>
-                            <p id="alert-number" class="hidden"> fill your employ  </p>
-                            <p></p>
-                    
-                            <label for="phone">Celphone Number:</label><br>
-                            <input type="text" id="phone" name="phone"><br>
-                            <p id="alert-phone" class="hidden"> fill your cellphone </p>
-                            <p></p>
-                        <div id="submit1" class="button" onclick="nextA(1)">Enviar Resposta</div>
-                        <div class="clearfix"></div>
-                    </div>
-
-                <div id="question-1" class="container">
-                      <h2>Questão 1</h2>
-                        <h3>Você se preocupa em se tornar uma vítima de fraude?</h3>
-                        <input class ="q1" id ="correct1" type="radio"> Sim, qualquer um que pedir por isso<br>
-                        <input class ="q1" type="radio" > Na verdade não, mas às vezes eu deixo meu(minha) parceiro(a) sacar dinheiro para mim<br>
-                        <input class ="q1" type="radio" > Nunca!<br>
-
-                        <div class="alert alert-danger hidden" id="qst1"> marque uma questão </div>
-                        
-                        <div id="submit1" class="button" onclick="nextB(2)">Enviar Resposta</div>
-                        <div class="clearfix"></div>
-                        
-
-
-
-
-                    </div>
-    
-                   <div id="question-2" class="container">
-                       <h2>Questão 2</h2>
-                       <h3>Você utiliza a mesma senha para tudo?</h3>
-                       <input id ="correct2" type="radio" name="q2"> Sim, qualquer um que pedir por isso<br>
-                       <input id ="wrong2" type="radio" name="q2"> Na verdade não, mas às vezes eu deixo meu(minha) parceiro(a) sacar dinheiro para mim<br>
-                       <input id ="wrong2" type="radio" name="q2"> Nunca!<br>
-                       <div id="submit2" class="button" onclick="nextC(3)">Enviar Resposta</div>
-                       <div class="clearfix"></div>
-                   </div>
+                <div class="alert alert-danger hidden" id="qst2"> marque uma questão </div>
+                <div class="button" onclick="nextC(3)">Enviar Resposta</div>
+             </div>
                   
-                   <div id="question-3" class="container">	
-                       <h2>Questão 3</h2>
-                       <h3>Você confia em um e-mail enviado pelas suas costas pedindo sua senha?</h3>
-                       <input id ="correct3" type="radio" name="q3"> Sim, qualquer um que pedir por isso<br>
-                       <input id ="wrong3" type="radio" name="q3"> Na verdade não, mas às vezes eu deixo meu(minha) parceiro(a) sacar dinheiro para mim<br>
-                       <input id ="wrong3" type="radio" name="q3"> Nunca!<br>
-                       <div id="submit3" class="button" onclick="nextD(4)">Enviar Resposta</div>
-                       <div class="clearfix"></div>
-                   </div>
+             <div id="question-3" class="container">	
+                <h2>Questão 3</h2>
+                <h3>Você confia em um e-mail enviado pelas suas costas pedindo sua senha?</h3>
+                <input class ="q3" id ="correct3" type="radio"> Sim, qualquer um que pedir por isso<br>
+                <input class ="q3" type="radio"> Na verdade não, mas às vezes eu deixo meu(minha) parceiro(a) sacar dinheiro para mim<br>
+                <input class ="q3" type="radio"> Nunca!<br>
+
+                <div class="alert alert-danger hidden" id="qst3"> marque uma questão </div>
+                <div class="button" onclick="nextD(4)">Enviar Resposta</div>
+             </div>
     
              <div id="question-4" class="container">
                 <h2>Questão 4</h2>
                 <h3>Você costuma usar cartão de crédito virtual em compras online?</h3>
-                <input id ="correct4" type="radio" name="q4"> Sim, qualquer um que pedir por isso<br>
-                <input id ="wrong4" type="radio" name="q4"> Na verdade não, mas às vezes eu deixo meu(minha) parceiro(a) sacar dinheiro para mim<br>
-                <input id ="wrong4" type="radio" name="q4"> Nunca!<br>
-                <div id="submit4" class="button" onclick="nextE(5)">Enviar Resposta</div>
-                <div class="clearfix"></div>
+                <input class ="q4" type="radio"> Sim, qualquer um que pedir por isso<br>
+                <input class ="q4" id ="correct4" type="radio"> Na verdade não, mas às vezes eu deixo meu(minha) parceiro(a) sacar dinheiro para mim<br>
+                <input class ="q4" type="radio"> Nunca!<br>
+
+                <div class="alert alert-danger hidden" id="qst4"> marque uma questão </div>
+                <div class="button" onclick="nextE(5)">Enviar Resposta</div>
               </div>
     
               <div id="question-5" class="container">
                 <h2>Questão 5</h2>
                 <h3>Você compartilha seu PIN com alguém?</h3>
-                <input id ="correct5" type="radio" name="q5"> Sim, qualquer um que pedir por isso<br>
-                <input id ="wrong5" type="radio" name="q5"> Na verdade não, mas às vezes eu deixo meu(minha) parceiro(a) sacar dinheiro para mim<br>
-                <input id ="wrong5" type="radio" name="q5"> Nunca!<br>
-                <div id="submit5" class="button" onclick="nextF(6)">Enviar Resposta</div>
-                <div class="clearfix"></div>
+                <input class ="q5" type="radio"> Sim, qualquer um que pedir por isso<br>
+                <input class ="q5" type="radio"> Na verdade não, mas às vezes eu deixo meu(minha) parceiro(a) sacar dinheiro para mim<br>
+                <input class ="q5" id ="correct5" type="radio"> Nunca!<br>
+
+                <div class="alert alert-danger hidden" id="qst5"> marque uma questão </div>
+                <div class="button" onclick="nextF(6);result();">Enviar Resposta</div>
               </div>
     
-             <div id="question-6" class="container"> 
-               <h2>Obrigado por responder a pesquisa!</h2>
-               <div id="result" class="button2" onclick="result()">Pontuação</div>
-
-            </div>
-           </form>
+              <div id="question-6" class="container"> 
+                <h2>Obrigado por responder a pesquisa!</h2>
+                <div id="res">Pontuação</div>
+              </div>
+          </form>
          </div>
         </div>
-    </div>
 </body>
 </html>

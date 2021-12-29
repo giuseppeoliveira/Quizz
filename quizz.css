@@ -10,7 +10,6 @@
   box-sizing: border-box; 
 }
 
-
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -37,7 +36,6 @@ h3 {
   color: #5224a0;
   font-size: 26px;
 }
-
 
 .center {
   text-align: center;
@@ -84,6 +82,12 @@ h3 {
   transition: all 150ms ease-in-out;
 }
 
+.alert-point{
+  color: #00661f;
+  background-color: #c6ffd2;
+  border-color: #e7ffe5;
+  }
+
 
 .button2 {
   font-family: 'Barclaycard Co Lt',Tahoma,sans-serif;
@@ -95,18 +99,17 @@ h3 {
   line-height: 18px;
   border-radius: 3px;
   vertical-align: baseline;
-  background: #075da8;
+  background: #d60404;
   color: white;
-  text-decoration: none !important;
+  text-decoration: none ;
   display: inline-block;
   transition: background-color 200ms ease-in-out;
 }
 
 .button2:hover {
-  background-color: #059fdb !important;
+  background-color: #db0505 !important;
   color: white;
 }
-
 
 .hidden {
   display: none;
@@ -115,7 +118,6 @@ h3 {
 p {
   color: #ff0000;
 }
-
 
 .alert {
   position: relative;
@@ -130,3 +132,4 @@ p {
   background-color: #f8d7da;
   border-color: #f5c6cb;
 }
+
