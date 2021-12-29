@@ -10,6 +10,13 @@
 
 
 <body>
+  <div class="navigation">
+    <a href="https://github.com/giuseppeoliveira?tab=repositories" target="_blank">
+      <img src="https://icon-library.com/images/github-icon-white/github-icon-white-6.jpg" alt="My GitHub" width="50" >
+    </a>
+    <h5> My GitHub </h5>
+  </div>
+
     <div class="container">	
         <div class="headder">
             <h2>Music Survey</h2>
@@ -45,10 +52,10 @@
              <div id="question-1" class="container">
                 <h2>Question 1</h2>
                 <h3>Which band uses violin in all their songs?</h3>
-                <input class ="q1" id ="correct1" type="radio"> Korpiklaani <br>
-                <input class ="q1" type="radio"> Led Zeppelin <br>
-                <input class ="q1" type="radio"> KoRn <br>
-                <input class ="q1" type="radio"> Finntroll <br>
+                <input class ="q1" id ="correct1" type="radio" name="q1"> Korpiklaani <br>
+                <input class ="q1" type="radio" name="q1"> Led Zeppelin <br>
+                <input class ="q1" type="radio" name="q1"> KoRn <br>
+                <input class ="q1" type="radio" name="q1"> Finntroll <br>
 
                 <div class="alert alert-danger hidden" id="qst1"> Please, select one option. </div>
                 <div class="button" onclick="nextB(2)"> Next Question </div>
@@ -57,10 +64,10 @@
              <div id="question-2" class="container">
                 <h2>Question 2</h2>
                 <h3>Which band uses visual Kei?</h3>
-                <input class ="q2" type="radio"> Saundô <br>
-                <input class ="q2" type="radio"> Flow <br>
-                <input class ="q2" id ="correct2" type="radio"> X-Japan<br>
-                <input class ="q2" type="radio"> Maximum The Hormone <br>
+                <input class ="q2" type="radio" name="q2"> Saundô <br>
+                <input class ="q2" type="radio" name="q2"> Flow <br>
+                <input class ="q2" id ="correct2" type="radio" name="q2"> X-Japan<br>
+                <input class ="q2" type="radio" name="q2"> Maximum The Hormone <br>
 
                 <div class="alert alert-danger hidden" id="qst2"> Please, select one option. </div>
                 <div class="button" onclick="nextC(3)"> Next Question </div>
@@ -69,10 +76,10 @@
              <div id="question-3" class="container">	
                 <h2>Question 3</h2>
                 <h3>Which band does guitarist Sugizo play?</h3>
-                <input class ="q3" type="radio"> Dir En Grey <br>
-                <input class ="q3" id ="correct3" type="radio"> Luna Sea <br>
-                <input class ="q3" type="radio"> The Gazette <br>
-                <input class ="q3" type="radio"> L'Arc~en~Ciel <br>
+                <input class ="q3" type="radio" name="q3"> Dir En Grey <br>
+                <input class ="q3" id ="correct3" type="radio" name="q3"> Luna Sea <br>
+                <input class ="q3" type="radio" name="q3"> The Gazette <br>
+                <input class ="q3" type="radio" name="q3"> L'Arc~en~Ciel <br>
 
                 <div class="alert alert-danger hidden" id="qst3"> Please, select one option. </div>
                 <div class="button" onclick="nextD(4)">Next Question</div>
@@ -80,11 +87,11 @@
     
              <div id="question-4" class="container">
                 <h2>Question 4</h2>
-                <h3>Wich band belongs the song called Ouka Saki Some ni Keri?</h3>
-                <input class ="q4" type="radio"> A <br>
-                <input class ="q4" id ="correct4" type="radio"> D <br>
-                <input class ="q4" type="radio"> C <br>
-                <input class ="q4" type="radio"> B <br>
+                <h3>Which band belongs the song called Ouka Saki Some ni Keri?</h3>
+                <input class ="q4" type="radio" name="q4"> A <br>
+                <input class ="q4" id ="correct4" type="radio" name="q4"> D <br>
+                <input class ="q4" type="radio" name="q4"> C <br>
+                <input class ="q4" type="radio" name="q4"> B <br>
 
                 <div class="alert alert-danger hidden" id="qst4"> Please, select one option </div>
                 <div class="button" onclick="nextE(5)">Next Question</div>
@@ -92,11 +99,11 @@
     
               <div id="question-5" class="container">
                 <h2>Question 5</h2>
-                <h3>Wich band belongs the song called Spark?</h3>
-                <input class ="q5" type="radio"> The Gazette <br>
-                <input class ="q5" type="radio"> Nightmare <br>
-                <input class ="q5" id ="correct5" type="radio"> Yellow Monkeys <br>
-                <input class ="q5" type="radio"> Scandal <br>
+                <h3>Which band belongs the song called Spark?</h3>
+                <input class ="q5" type="radio" name="q5"> The Gazette <br>
+                <input class ="q5" type="radio" name="q5"> Nightmare <br>
+                <input class ="q5" id ="correct5" type="radio" name="q5"> Yellow Monkeys <br>
+                <input class ="q5" type="radio" name="q5"> Scandal <br>
 
                 <div class="alert alert-danger hidden" id="qst5"> Please, select one option </div>
                 <div class="button" onclick="nextF(6);result();"> Send Answers </div>

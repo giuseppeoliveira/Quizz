@@ -115,6 +115,6 @@ function result() {
     {
         score++;
     }
-    document.getElementById("res").innerHTML = "You are exceptional for being a part of this experience. You tried and did it. From 5 questions, you answered the total of "+score ;
+    document.getElementById("res").innerHTML = "You are exceptional for being a part of this experience. You tried and did it, from 5 questions you answered correct the total of "+score ;
 }
 
