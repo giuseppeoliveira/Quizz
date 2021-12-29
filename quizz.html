@@ -20,7 +20,7 @@
     <div class="container">	
         <div class="headder">
             <h2>Music Survey</h2>
-            <div id="progress_bar" class="progress_bar1"></div>
+            <div id="progress_bar"></div>
         </div>
 
             <form class="questions_box">
@@ -46,7 +46,7 @@
                 <input type="text" id="phone" placeholder="DDD + Number" pattern="[0-9]{3}-[0-9]{5}-[0-9]{4}"><br>
                 <p id="alert-phone" class="hidden"> Fill with your cellphone. </p>
 
-                <div class="button" onclick="nextA(1)"> Start Survey </div>
+                <div class="button" onclick="nextA(1);progress()"> Start Survey </div>
              </div>
 
              <div id="question-1" class="container">

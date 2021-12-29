@@ -1,11 +1,14 @@
+
 //Validate input.
 function validate(id, length){
     if(document.getElementById(id).value.length < length) {        
         document.getElementById("alert-"+id).classList.remove("hidden");
-        return false; 
+        document.getElementById('progress_bar').style.width = "15%";
+        return false;
      }
      else{
          document.getElementById("alert-"+id).classList.add("hidden");
+         document.getElementById('progress_bar').style.width = "30%";
          return true; 
      }
 }
@@ -28,9 +31,11 @@ function nextB(id) {
     {
         document.getElementsByClassName("container")[id-1].style.display = "none"
         document.getElementsByClassName("container")[id].style.display = "block";
+        document.getElementById('progress_bar').style.width = "45%";
     }
     else {
         document.getElementById("qst1").classList.remove("hidden");
+        document.getElementById('progress_bar').style.width = "30%";
 }
 }
 
@@ -41,9 +46,11 @@ function nextC(id) {
     {
         document.getElementsByClassName("container")[id-1].style.display = "none"
         document.getElementsByClassName("container")[id].style.display = "block";
+        document.getElementById('progress_bar').style.width = "60%";
     }
     else {
         document.getElementById("qst2").classList.remove("hidden");
+        document.getElementById('progress_bar').style.width = "45%";
     } 
 }
 
@@ -54,9 +61,11 @@ function nextD(id) {
     {
         document.getElementsByClassName("container")[id-1].style.display = "none"
         document.getElementsByClassName("container")[id].style.display = "block";
+        document.getElementById('progress_bar').style.width = "75%";
     }
     else {
         document.getElementById("qst3").classList.remove("hidden");
+        document.getElementById('progress_bar').style.width = "60%";
     } 
 
 }
@@ -68,9 +77,11 @@ function nextE(id) {
     {
         document.getElementsByClassName("container")[id-1].style.display = "none"
         document.getElementsByClassName("container")[id].style.display = "block";
+        document.getElementById('progress_bar').style.width = "90%";
     }
     else {
         document.getElementById("qst4").classList.remove("hidden");
+        document.getElementById('progress_bar').style.width = "75%";
     } 
 
 
@@ -83,9 +94,11 @@ function nextF(id) {
     {
         document.getElementsByClassName("container")[id-1].style.display = "none"
         document.getElementsByClassName("container")[id].style.display = "block";
+        document.getElementById('progress_bar').style.width = "100%";
     }
     else {
         document.getElementById("qst5").classList.remove("hidden");
+        document.getElementById('progress_bar').style.width = "90%";
     } 
 
 
